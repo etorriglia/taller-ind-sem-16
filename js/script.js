@@ -46,7 +46,7 @@ function randomFact(URL){
             let facts= factJSON.data;
             let randomInt= randomIntFromInterval(0,facts.length-1);
             let factDisplayed= facts[randomInt].fact;
-            factResults.innerHTML=factDisplayed;
+            factResults.innerHTML=`<p class='fs-3'>${factDisplayed}</p>`;
 
             }
         })
